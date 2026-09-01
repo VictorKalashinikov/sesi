@@ -64,3 +64,41 @@ button{
 button:hover{
     background-color: blue;
 }
+
+.btn-menu {
+    display: block;
+    text-align: center;
+    background-color: #077bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.btn-menu:hover{
+    background-color: blue;
+}
+
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info-usuario p{
+    font-size: 14px;
+    margin: 8px 0;
+    color: #333;
+}
+
+.info-usuario a{
+    color: blue;
+    text-decoration: none;
+}
+
+.info-usuario a:hover {
+    text-decoration: underline;
+}
