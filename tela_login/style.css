@@ -102,3 +102,38 @@ button:hover{
 .info-usuario a:hover {
     text-decoration: underline;
 }
+
+body.modo-escuro{
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+
+body.modo-escuro .caixa-Login{
+    background-color: rgb(17, 16, 16);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.55);
+}
+
+body.modo-escuro h2,
+body.modo-escuro p,
+body.modo-escuro label{
+    color: white;
+}
+
+body.modo-escuro .link_esqueci {
+    color: cyan;
+}
+
+body.fone-grande{
+    font-size: 18px;
+}
+
+body.fone-grande h2{
+    font-size: 28px;
+}
+
+body.fone-grande p,
+body.fone-grande label,
+body.fone-grande .btn-menu,
+body.fone-grande button{
+    font-size: 18px;
+}
