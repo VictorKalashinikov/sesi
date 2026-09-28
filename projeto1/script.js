@@ -22,7 +22,8 @@ document.getElementById('form').addEventListener('submit', function(e) {
     })
 
     if (usuarioEncontrado) {
-        alert('Login realizado com sucesso! Bem vindo ' + usuarioDigitado)
+        localStorage.setItem('usuarioLogado', usuarioDigitado)
+        window.location.href = 'home.html'
     } else {
         alert('Usuário ou senha incorreto.')
     }
