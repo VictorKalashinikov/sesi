@@ -71,3 +71,33 @@ const trinos = {
         ]
     }
 }
+
+function exibirTreino(tipo){
+    const dados = treinos [tipo]
+    document.getElementById('tituloTreino').textContent = dados.titulo
+
+    const lista = document.getElementById('listaExercicios')
+    lista.innerHTML = ''
+
+    dados.exercicios.array.forEach(function(exercicio){
+        const li = document.createElement('li')
+        lista.appendChild(li)
+    });
+}
+
+btnTreinoA.addEventListener('click', function(){
+    exibirTreino(A)
+})
+
+
+document.getElementById('btnTreinoB').addEventListener('click', function(){
+    exibirTreino(B)
+})
+
+document.getElementById('btnTreinoC').addEventListener('click', function(){
+    exibirTreino(C)
+})
+
+document.getElementById('btnVoltar').addEventListener('click', function(){
+    window.location.href='home.html'
+})
